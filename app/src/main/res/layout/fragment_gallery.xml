@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Principal Amount"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPrincipal"
+        android:hint="Annual Interest Rate (%)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextRate"
+        android:hint="Time Period (years)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTime"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp" />
+
+</RelativeLayout>
